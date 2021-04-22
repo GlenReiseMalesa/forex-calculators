@@ -1,0 +1,2 @@
+rootProject.name='PIP amount,PIP value,Margin Calculators'
+include ':app'

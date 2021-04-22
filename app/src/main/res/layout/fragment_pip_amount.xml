@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.pipamount.PipAmountFragment">
+
+    <Button
+        android:id="@+id/button_pipamount_calculate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:height="75dp"
+        android:background="@drawable/button_background"
+        android:text="calculate"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/editText_pipamount_targetprice"
+        app:layout_constraintStart_toStartOf="@+id/textView_pipamount_targetprice"
+        app:layout_constraintTop_toBottomOf="@+id/editText_pipamount_targetprice" />
+
+    <EditText
+        android:id="@+id/editText_pipamount_targetprice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="@+id/editText_pipamount_entryprice"
+        app:layout_constraintStart_toEndOf="@+id/textView_pipamount_entryprice"
+        app:layout_constraintStart_toStartOf="@+id/editText_pipamount_entryprice"
+        app:layout_constraintTop_toBottomOf="@+id/editText_pipamount_entryprice" />
+
+    <TextView
+        android:id="@+id/textView_pipamount_targetprice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Target Price :"
+        android:textColor="#009688"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/editText_pipamount_targetprice"
+        app:layout_constraintEnd_toEndOf="@+id/textView_pipamount_entryprice"
+        app:layout_constraintStart_toStartOf="@+id/textView_pipamount_entryprice"
+        app:layout_constraintTop_toBottomOf="@+id/textView_pipamount_entryprice" />
+
+    <EditText
+        android:id="@+id/editText_pipamount_entryprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="198dp"
+        android:layout_marginEnd="40dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_pipamount_entryprice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="8dp"
+        android:text="Entry Price :"
+        android:textColor="#009688"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/editText_pipamount_entryprice"
+        app:layout_constraintEnd_toStartOf="@+id/editText_pipamount_entryprice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.gms.ads.AdView
+
+        android:id="@+id/adview1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="32dp"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-9524002965449333/6381183743"
+        app:layout_constraintBottom_toTopOf="@+id/editText_pipamount_entryprice"
+        app:layout_constraintEnd_toEndOf="@+id/editText_pipamount_entryprice"
+        app:layout_constraintStart_toStartOf="@+id/textView_pipamount_entryprice"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
